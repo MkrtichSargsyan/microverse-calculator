@@ -13,7 +13,7 @@
 
 ## Live Demo
 
-<a href= "https://60d322379603742312941645--wizardly-sinoussi-030358.netlify.app/" target="_blank">Live version</a>
+<a href= "https://60d3324f84053833cf33d728--pedantic-golick-5c960d.netlify.app/" target="_blank">Live version</a>
 
 ## Author
 
