@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled from "styled-components";
 
 const DisplayArea = styled.div`
   width: 200px;
@@ -8,16 +8,10 @@ const DisplayArea = styled.div`
   color: palevioletred;
   margin: 0 auto;
   padding: 0.25em 1em;
-`
+`;
 
+const Display = ({ result }) => {
+  return <DisplayArea>{result}</DisplayArea>;
+};
 
-const Display = ({result}) => {
-  return (
-    <DisplayArea>
-      {result}
-    </DisplayArea>      
-  )
-}
-
-export default Display
-
+export default Display;

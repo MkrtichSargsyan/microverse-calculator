@@ -46,9 +46,9 @@ export default function ButtonPanel() {
         <Button buttonName="+" />
       </ButtonPanelGroup>
       <ButtonPanelGroup>
-        <Button buttonName="0" className='zeroButton' />
+        <Button buttonName="0" className="zeroButton" />
         <Button buttonName="." />
-        <Button buttonName="="/>
+        <Button buttonName="=" />
       </ButtonPanelGroup>
     </ButtonPanelContainer>
   );
