@@ -1,6 +1,6 @@
-import React from "react";
-import Button from "./Button";
-import styled from "styled-components";
+import React from 'react';
+import styled from 'styled-components';
+import Button from './Button';
 
 const ButtonPanelContainer = styled.div`
   width: 200px;
