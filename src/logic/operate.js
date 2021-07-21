@@ -18,7 +18,7 @@ const operate = (numberOne, numberTwo, operation) => {
       result = x.times(y);
       break;
     case '%':
-      result = x.times(y) / 100;
+      result = x.mod(y);
       break;
     default:
       throw Error('Wrong command');

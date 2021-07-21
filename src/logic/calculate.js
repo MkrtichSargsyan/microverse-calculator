@@ -14,6 +14,18 @@ const calculate = (data, buttonName) => {
     operation = '';
   }
 
+  if (buttonName === '.') {
+    total += '.';
+    next += '.';
+    operation = '';
+  }
+
+  if (buttonName === '=') {
+    total = '0';
+    next = '';
+    operation = '';
+  }
+
   return { total, next, operation };
 };
 
