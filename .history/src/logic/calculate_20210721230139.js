@@ -1,4 +1,4 @@
-// import operate from './operate';
+import operate from './operate';
 
 const calculate = (data, buttonName) => {
   let { total, next, operation } = data;
@@ -6,12 +6,6 @@ const calculate = (data, buttonName) => {
   if (buttonName === '+/-') {
     total *= -1;
     next *= -1;
-  }
-
-  if (buttonName === 'AC') {
-    total = '0';
-    next = '';
-    operation = '';
   }
 
   return { total, next, operation };

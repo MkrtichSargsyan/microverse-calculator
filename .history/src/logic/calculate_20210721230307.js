@@ -8,11 +8,6 @@ const calculate = (data, buttonName) => {
     next *= -1;
   }
 
-  if (buttonName === 'AC') {
-    total = '0';
-    next = '';
-    operation = '';
-  }
 
   return { total, next, operation };
 };

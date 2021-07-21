@@ -11,7 +11,7 @@ const calculate = (data, buttonName) => {
   if (buttonName === 'AC') {
     total = '0';
     next = '';
-    operation = '';
+    operation = ''
   }
 
   return { total, next, operation };
