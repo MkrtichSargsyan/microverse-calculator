@@ -4,7 +4,7 @@ import calculate from '../logic/calculate';
 
 const App = () => (
 
-  calculate();
+  calculate;
   <>
     <Display result="0" />
     <ButtonPanel />
