@@ -14,6 +14,26 @@
 ## Live Demo
 <a href= "https://frosty-beaver-4fbb17.netlify.app/" target="_blank">Live version</a>
 
+
+## Getting Started
+
+To get a local copy up and running follow these simple example steps.
+
+### Setup
+
+- Clone repository
+- Open terminal inside microverse-calculator
+
+```
+npm install
+```
+
+### Usage
+
+```
+npm start
+```
+
 ## Author
 
 Feel free to reach out. I'm always happy to connect :slightly_smiling_face:
