@@ -21,7 +21,7 @@ const operate = (numberOne, numberTwo, operation) => {
       result = x.mod(y);
       break;
     default:
-      throw Error('Wrong command');
+      // throw Error('Wrong command');
   }
   return result;
 };

@@ -1,5 +1,6 @@
-// import operate from './operate';
+import operate from './operate';
 
+operate();
 const calculate = (data, buttonName) => {
   let { total, next, operation } = data;
 
