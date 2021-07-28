@@ -1,9 +1,9 @@
-# Embedding images and video
+# React Calculator
 
 3d calculator
 
 ## Desktop
-![screenshot]()
+<!-- ![screenshot]() -->
 
 ## Built With
 
