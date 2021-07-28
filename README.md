@@ -12,8 +12,27 @@
 - VS Code
 
 ## Live Demo
+<a href= "https://frosty-beaver-4fbb17.netlify.app/" target="_blank">Live version</a>
 
-<a href= "https://60d3324f84053833cf33d728--pedantic-golick-5c960d.netlify.app/" target="_blank">Live version</a>
+
+## Getting Started
+
+To get a local copy up and running follow these simple example steps.
+
+### Setup
+
+- Clone repository
+- Open terminal inside microverse-calculator
+
+```
+npm install
+```
+
+### Usage
+
+```
+npm start
+```
 
 ## Author
 

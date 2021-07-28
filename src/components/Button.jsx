@@ -2,9 +2,13 @@ import React from 'react';
 import '../index.css';
 import PropTypes from 'prop-types';
 
-export default function Button({ buttonName, className }) {
+export default function Button({ buttonName, className, clickHandler }) {
   return (
-    <button type="button" className={className}>
+    <button
+      type="button"
+      className={className}
+      onClick={() => clickHandler(buttonName)}
+    >
       {buttonName}
     </button>
   );
@@ -17,4 +21,9 @@ Button.propTypes = {
 
 Button.defaultProps = {
   className: 'zeroButton',
+  clickHandler: () => {},
+};
+
+Button.propTypes = {
+  clickHandler: PropTypes.func,
 };
