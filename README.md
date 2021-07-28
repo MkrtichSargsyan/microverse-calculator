@@ -1,19 +1,20 @@
 # React Calculator
 
-3d calculator
+microverse calculator
 
 ## Desktop
+
 <!-- ![screenshot]() -->
 
 ## Built With
 
 - create-react-app,
-- CSS,
+- CSS, styled components
 - VS Code
 
 ## Live Demo
-<a href= "https://frosty-beaver-4fbb17.netlify.app/" target="_blank">Live version</a>
 
+<a href= "https://frosty-beaver-4fbb17.netlify.app/" target="_blank">Live version</a>
 
 ## Getting Started
 
@@ -40,13 +41,10 @@ Feel free to reach out. I'm always happy to connect :slightly_smiling_face:
 
 👤 **Mkrtich Sargsyan**
 
-
 [<code><img height="26" src="https://cdn.iconscout.com/icon/free/png-256/github-153-675523.png"></code>](https://github.com/MkrtichSargsyan)
 [<code><img height="26" src="https://upload.wikimedia.org/wikipedia/sco/thumb/9/9f/Twitter_bird_logo_2012.svg/1200px-Twitter_bird_logo_2012.svg.png"></code>](https://twitter.com/MkrtichSargsyan)
 [<code><img height="26" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Linkedin.svg/1200px-Linkedin.svg.png"></code>](https://www.linkedin.com/in/mkrtich-sargsyan/)
 [<code><img height="26" src="https://cdn4.iconfinder.com/data/icons/free-colorful-icons/360/gmail.png"></code>](mailto:mkrtichsargsyan24@gmail.com)
-
-
 
 ## 🤝 Contributing
 
