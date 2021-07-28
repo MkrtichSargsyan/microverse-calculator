@@ -1,6 +1,7 @@
 import Big from 'big.js';
 
 const operate = (numberOne, numberTwo, operation) => {
+  console.log(numberOne);
   const x = Big(numberOne);
   const y = Big(numberTwo);
   let result = 0;

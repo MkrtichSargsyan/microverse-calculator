@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import PropTypes from 'prop-types';
 import Button from './Button';
 
 const ButtonPanelContainer = styled.div`
@@ -18,38 +19,46 @@ const ButtonPanelGroup = styled.div`
   margin: 10px;
 `;
 
-export default function ButtonPanel() {
+export default function ButtonPanel({ clickHandler }) {
   return (
     <ButtonPanelContainer>
       <ButtonPanelGroup>
-        <Button buttonName="AC" />
-        <Button buttonName="+/-" />
-        <Button buttonName="%" />
-        <Button buttonName="÷" />
+        <Button buttonName="AC" clickHandler={clickHandler} />
+        <Button buttonName="+/-" clickHandler={clickHandler} />
+        <Button buttonName="%" clickHandler={clickHandler} />
+        <Button buttonName="÷" clickHandler={clickHandler} />
       </ButtonPanelGroup>
       <ButtonPanelGroup>
-        <Button buttonName="7" />
-        <Button buttonName="8" />
-        <Button buttonName="9" />
-        <Button buttonName="X" />
+        <Button buttonName="7" clickHandler={clickHandler} />
+        <Button buttonName="8" clickHandler={clickHandler} />
+        <Button buttonName="9" clickHandler={clickHandler} />
+        <Button buttonName="X" clickHandler={clickHandler} />
       </ButtonPanelGroup>
       <ButtonPanelGroup>
-        <Button buttonName="4" />
-        <Button buttonName="5" />
-        <Button buttonName="6" />
-        <Button buttonName="-" />
+        <Button buttonName="4" clickHandler={clickHandler} />
+        <Button buttonName="5" clickHandler={clickHandler} />
+        <Button buttonName="6" clickHandler={clickHandler} />
+        <Button buttonName="-" clickHandler={clickHandler} />
       </ButtonPanelGroup>
       <ButtonPanelGroup>
-        <Button buttonName="1" />
-        <Button buttonName="2" />
-        <Button buttonName="3" />
-        <Button buttonName="+" />
+        <Button buttonName="1" clickHandler={clickHandler} />
+        <Button buttonName="2" clickHandler={clickHandler} />
+        <Button buttonName="3" clickHandler={clickHandler} />
+        <Button buttonName="+" clickHandler={clickHandler} />
       </ButtonPanelGroup>
       <ButtonPanelGroup>
-        <Button buttonName="0" className="zeroButton" />
-        <Button buttonName="." />
-        <Button buttonName="=" />
+        <Button
+          buttonName="0"
+          className="zeroButton"
+          clickHandler={clickHandler}
+        />
+        <Button buttonName="." clickHandler={clickHandler} />
+        <Button buttonName="=" clickHandler={clickHandler} />
       </ButtonPanelGroup>
     </ButtonPanelContainer>
   );
 }
+
+ButtonPanel.propTypes = {
+  clickHandler: PropTypes.func.isRequired,
+};
