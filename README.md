@@ -8,7 +8,7 @@ microverse calculator
 
 ## Built With
 
-- create-react-app,
+- create-react-app, 
 - CSS, styled components
 - VS Code
 

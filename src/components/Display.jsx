@@ -11,9 +11,7 @@ const DisplayArea = styled.div`
   padding: 0.25em 1em;
 `;
 
-const Display = ({ result }) => (
-  <DisplayArea>{result}</DisplayArea>
-);
+const Display = ({ result }) => <DisplayArea>{result}</DisplayArea>;
 
 Display.propTypes = {
   result: PropTypes.string,
