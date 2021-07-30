@@ -22,7 +22,7 @@ const operate = (numberOne, numberTwo, operation) => {
       result = x.times(y);
       break;
     case '%':
-      result = x.mod(y);
+      result = x.times(y) / 100;
       break;
     default:
   }
