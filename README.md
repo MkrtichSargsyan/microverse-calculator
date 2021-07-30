@@ -14,7 +14,7 @@ microverse calculator
 
 ## Live Demo
 
-<a href= "https://frosty-beaver-4fbb17.netlify.app/" target="_blank">Live version</a>
+<a href= "https://xenodochial-lalande-631dec.netlify.app" target="_blank">Live version</a>
 
 ## Getting Started
 
