@@ -26,12 +26,11 @@ class App extends Component {
   };
 
   render() {
-    console.log(this.state);
-    const { next } = this.state;
+    const { next, total, operation } = this.state;
 
     return (
       <>
-        <Display result={next} />
+        <Display result={next} total={total} opeartion={operation} />
         <ButtonPanel clickHandler={this.handleClick} />
       </>
     );

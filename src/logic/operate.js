@@ -1,7 +1,6 @@
 import Big from 'big.js';
 
 const operate = (numberOne, numberTwo, operation) => {
-  console.log(numberOne);
   const x = Big(numberOne);
   const y = Big(numberTwo);
   let result = 0;
@@ -13,16 +12,19 @@ const operate = (numberOne, numberTwo, operation) => {
       result = x.plus(y);
       break;
     case '/':
-      result = x.div(y);
+      if (numberTwo === '0') {
+        result = 'division error';
+      } else {
+        result = x.div(y);
+      }
       break;
     case '*':
       result = x.times(y);
       break;
     case '%':
-      result = x.mod(y);
+      result = x.times(y) / 100;
       break;
     default:
-      // throw Error('Wrong command');
   }
   return result;
 };
