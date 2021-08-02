@@ -2,13 +2,13 @@ import styled from 'styled-components';
 import PropTypes from 'prop-types';
 
 const DisplayArea = styled.div`
-  width: 200px;
-  background: transparent;
+  width: 400px;
+  padding:20px;
+  background: grey;
   border-radius: 3px;
-  border: 2px solid palevioletred;
-  color: palevioletred;
+  color: white;
+  text-align:right;
   margin: 0 auto;
-  padding: 0.25em 1em;
 `;
 
 const Display = ({ result }) => <DisplayArea>{result}</DisplayArea>;

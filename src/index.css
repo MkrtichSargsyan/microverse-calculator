@@ -8,11 +8,16 @@ body {
 }
 
 button {
-  width: 35px;
-  border-radius: 3px;
-  border: 1px solid black;
+  border: 1px solid gray;
+  flex: 1;
+  padding: 20px 10px;
 }
 
 .zeroButton {
-  width: 83px;
+  flex: 2;
+  padding: 20px 22px;
+}
+
+.lastButton {
+  background-color: rgb(223, 167, 47);
 }

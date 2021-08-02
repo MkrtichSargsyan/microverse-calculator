@@ -20,7 +20,7 @@ Button.propTypes = {
 };
 
 Button.defaultProps = {
-  className: 'zeroButton',
+  className: '',
   clickHandler: () => {},
 };
 
