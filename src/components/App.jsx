@@ -1,40 +1,35 @@
-import React, { Component } from 'react';
+import React, { useState } from 'react';
 import Display from './Display';
 import ButtonPanel from './ButtonPanel';
 import calculate from '../logic/calculate';
 
-class App extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      total: '0',
-      next: '0',
-      operation: null,
-    };
+const App = () => {
+  const [values, setValues] = useState({
+    total: 0,
+    next: '0',
+    operation: null,
+  });
 
-    this.handleClick = this.handleClick.bind(this);
-  }
-
-  handleClick = (buttonName) => {
-    const currentData = this.state;
+  const handleClick = (buttonName) => {
+    const currentData = values;
     const updatedData = calculate(currentData, buttonName);
-    this.setState({
+    setValues({
       total: updatedData.total,
       next: updatedData.next,
       operation: updatedData.operation,
     });
   };
 
-  render() {
-    const { next, total, operation } = this.state;
-
-    return (
-      <>
-        <Display result={next} total={total} opeartion={operation} />
-        <ButtonPanel clickHandler={this.handleClick} />
-      </>
-    );
-  }
-}
+  return (
+    <>
+      <Display
+        result={values.next}
+        total={values.total}
+        opeartion={values.operation}
+      />
+      <ButtonPanel clickHandler={handleClick} />
+    </>
+  );
+};
 
 export default App;
