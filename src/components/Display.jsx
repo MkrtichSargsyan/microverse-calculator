@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 const DisplayArea = styled.div`
   width: 400px;
-  padding:20px;
+  padding:25px 20px;
   background: grey;
   border-radius: 3px;
   color: white;

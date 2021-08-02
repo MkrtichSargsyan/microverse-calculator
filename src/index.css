@@ -7,6 +7,10 @@ body {
   height: 100vh;
 }
 
+#root {
+  padding-top: 70px;
+}
+
 button {
   border: 1px solid gray;
   flex: 1;
