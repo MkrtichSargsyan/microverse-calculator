@@ -18,6 +18,12 @@ const data11 = calculate(data10, '1');
 const data12 = calculate(data11, '=');
 const data13 = calculate(data12, 'AC');
 
+const data14 = calculate({ total: '0', next: '0', operation: null }, '8');
+const data15 = calculate(data14, '÷');
+const data16 = calculate(data15, '2');
+const data17 = calculate(data16, '=');
+const data18 = calculate(data17, '+/-');
+
 it('should add 9 as the first value', () => {
   expect(data1).toEqual({ total: '9', next: '9', operation: null });
 });
@@ -72,4 +78,24 @@ it('should return {1.43,1.43,null}', () => {
 
 it('should equal initial', () => {
   expect(data13).toEqual(initial);
+});
+
+it('should equal 8', () => {
+  expect(data14).toEqual({ total: '8', next: '8', operation: null });
+});
+
+it('should equal {8,/,/}', () => {
+  expect(data15).toEqual({ total: '8', next: '/', operation: '/' });
+});
+
+it('should equal {8,2,/}', () => {
+  expect(data16).toEqual({ total: '8', next: '2', operation: '/' });
+});
+
+it('should equal {4,4,null}', () => {
+  expect(data17).toEqual({ total: '4', next: '4', operation: null });
+});
+
+it('should equal {-4,-4,null}', () => {
+  expect(data18).toEqual({ total: '-4', next: '-4', operation: null });
 });
