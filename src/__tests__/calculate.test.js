@@ -10,9 +10,13 @@ const data4 = calculate(data3, '=');
 const data5 = calculate(data4, '%');
 const data6 = calculate(data5, '3');
 const data7 = calculate(data6, '=');
-const data8 = calculate(data7, 'AC');
 
-// 9 * 9 calculation
+const data8 = calculate(data7, '+');
+const data9 = calculate(data8, '1');
+const data10 = calculate(data9, '-');
+const data11 = calculate(data10, '1');
+const data12 = calculate(data11, '=');
+const data13 = calculate(data12, 'AC');
 
 it('should add 9 as the first value', () => {
   expect(data1).toEqual({ total: '9', next: '9', operation: null });
@@ -42,6 +46,30 @@ it('should return 2.43', () => {
   expect(data7).toEqual({ total: '2.43', next: '2.43', operation: null });
 });
 
-it('should return {0,0,null}', () => {
-  expect(data8).toEqual(initial);
+it('should return {2.43,+,+}', () => {
+  expect(data8).toEqual({ total: '2.43', next: '+', operation: '+' });
+});
+
+it('should return {2.43,+,+}', () => {
+  expect(data8).toEqual({ total: '2.43', next: '+', operation: '+' });
+});
+
+it('should return {2.43,1,+}', () => {
+  expect(data9).toEqual({ total: '2.43', next: '1', operation: '+' });
+});
+
+it('should return {2.43,-,-}', () => {
+  expect(data10).toEqual({ total: '2.43', next: '-', operation: '-' });
+});
+
+it('should return {2.43,1,-}', () => {
+  expect(data11).toEqual({ total: '2.43', next: '1', operation: '-' });
+});
+
+it('should return {1.43,1.43,null}', () => {
+  expect(data12).toEqual({ total: '1.43', next: '1.43', operation: null });
+});
+
+it('should equal initial', () => {
+  expect(data13).toEqual(initial);
 });
